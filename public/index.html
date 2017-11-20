@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Pomodoro</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
     <script src="bundle.js"></script>
 </head>
 <body ng-controller="PomodoroCtrl as ctrl">
-<h1>Pomodoro</h1>
-<button ng-repeat="interval in ctrl.intervalTypes" ng-click="ctrl.setCurrentInterval(interval)">{{ interval.toString() }}</button>
 
-<p>{{ ctrl.date | date : 'mm:ss' }}</p>
-<button ng-click="ctrl.start()">Start</button>
-<button ng-click="ctrl.stop()">Stop</button>
-<button ng-click="ctrl.reset()">Reset</button>
+<div id="page-header">
+    <h1 id="heading">Pomodoro</h1>
+</div>
+
+<ul id="top-tabs">
+    <li class="top-tab" ng-repeat="interval in ctrl.intervalTypes" ng-click="ctrl.setCurrentInterval(interval)">
+        {{ ctrl.filterInterval(interval) }}
+    </li>
+</ul>
+
+<p id="time">{{ ctrl.date | date : 'mm:ss' }}</p>
+
+<ul id="control">
+    <li class="control-button button-start" ng-click="ctrl.start()">Start</li>
+    <li class="control-button button-stop" ng-click="ctrl.stop()">Stop</li>
+    <li class="control-button button-reset" ng-click="ctrl.reset()">Reset</li>
+</ul>
 </body>
 </html>
