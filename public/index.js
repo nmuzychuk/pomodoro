@@ -1,2 +1,2 @@
-require('angular');
-require('./pomodoro');
+require('angular')
+require('./pomodoro')
