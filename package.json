@@ -2,6 +2,10 @@
   "name": "pomodoro",
   "version": "1.0.0",
   "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nmuzychuk/pomodoro"
+  },
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --content-base ./public",
