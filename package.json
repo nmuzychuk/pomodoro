@@ -9,12 +9,14 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --content-base ./public",
-    "test": "standard"
+    "test": "standard",
+    "heroku-postbuild": "npx webpack -p"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "angular": "^1.7.7"
+    "angular": "^1.7.7",
+    "express": "^4.16.4"
   },
   "devDependencies": {
     "standard": "^10.0.3",
