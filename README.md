@@ -4,6 +4,8 @@
 
 Easy to use Pomodoro Technique Timer
 
+https://my-pomodoro.herokuapp.com/
+
 ## Getting Started
 
 ### Prerequisites
