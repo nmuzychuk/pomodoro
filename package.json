@@ -20,7 +20,7 @@
     "set-value": "^3.0.1"
   },
   "devDependencies": {
-    "standard": "^14.3.1",
+    "standard": "^15.0.1",
     "webpack": "^4.29.1",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.1.14"
