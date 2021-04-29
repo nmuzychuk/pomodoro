@@ -17,7 +17,7 @@
   "dependencies": {
     "angular": "^1.7.7",
     "express": "^4.16.4",
-    "set-value": "^3.0.1"
+    "set-value": "^4.0.0"
   },
   "devDependencies": {
     "standard": "^16.0.3",
