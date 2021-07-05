@@ -13,12 +13,12 @@ angular.module('pomodoro', [])
 
     ctrl.currentInterval = ctrl.intervalTypes.pomodoro
 
-    var promise
+    let promise
 
     ctrl.start = function () {
       if (angular.isDefined(promise)) return
 
-      var count = ctrl.date.getMinutes() * 60
+      const count = ctrl.date.getMinutes() * 60
 
       promise = $interval(function (iteration) {
         ctrl.date.setSeconds(ctrl.date.getSeconds() - 1)
@@ -41,7 +41,7 @@ angular.module('pomodoro', [])
       ctrl.date = getDateForInterval(ctrl.currentInterval)
     }
 
-    var getDateForInterval = function (interval) {
+    const getDateForInterval = function (interval) {
       switch (interval) {
         case ctrl.intervalTypes.pomodoro:
           return new Date(1000 * 60 * 25)
@@ -61,7 +61,7 @@ angular.module('pomodoro', [])
       ctrl.start()
     }
 
-    var notify = function () {
+    const notify = function () {
       $window.alert('Your time is up!')
     }
 
